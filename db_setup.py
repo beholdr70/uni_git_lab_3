@@ -42,12 +42,11 @@ def db_setup_func():
     # Commiting changes into database
     db.commit()
 
+    db.close()
+
 
 # Creating required tables in database if they're missing
-def fix_db(existing_table: list):
-    # Opening database file
-    db = sqlite3.connect('dependencies/passDB.db')
-    cur = db.cursor()
+def fix_db(db: sqlite3.Connection, cur: sqlite3.Cursor, existing_table: list):
 
     # Creating missing tables in connected database
     cur.execute('CREATE TABLE IF NOT EXISTS master_pass(pass_instance TEXT)')

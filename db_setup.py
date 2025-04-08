@@ -34,7 +34,7 @@ def db_setup_func():
 
     # Creating required tables in connected database
     cur.execute('CREATE TABLE master_pass(pass_instance TEXT)')
-    cur.execute('CREATE TABLE general_pass(login_instance TEXT, pass_instance TEXT)')
+    cur.execute('CREATE TABLE general_pass(id INTEGER PRIMARY KEY, login_instance TEXT, pass_instance TEXT)')
 
     # Setting up master password
     setup_master_pass(cur)
@@ -47,10 +47,10 @@ def db_setup_func():
 
 # Creating required tables in database if they're missing
 def fix_db(db: sqlite3.Connection, cur: sqlite3.Cursor, existing_table: list):
-
     # Creating missing tables in connected database
     cur.execute('CREATE TABLE IF NOT EXISTS master_pass(pass_instance TEXT)')
-    cur.execute('CREATE TABLE IF NOT EXISTS general_pass(login_instance TEXT, pass_instance TEXT)')
+    cur.execute(
+        'CREATE TABLE IF NOT EXISTS general_pass(id INTEGER PRIMARY KEY, login_instance TEXT, pass_instance TEXT)')
 
     # Setting up new master password if master_pass table was corrupted
     if 'master_pass' not in existing_table:

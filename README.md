@@ -9,6 +9,30 @@
 -  Защита с помощью мастер-пароля
 -  Генератор случайных паролей
 
+## Скриншоты интерфейса:
+Первый запуск:
+![image](https://github.com/user-attachments/assets/c082dd46-e268-4668-86be-3727ad09e9e5)
+
+Последующие запуски:
+
+![image](https://github.com/user-attachments/assets/278ee59e-8cf7-4e65-a6e1-6f4808ba93bf)
+
+Выбор опций:
+
+![image](https://github.com/user-attachments/assets/4a60d041-0c6b-4e85-8f2f-e6f9f05562f2)
+
+Генерация паролей:
+
+![image](https://github.com/user-attachments/assets/80f7ca4b-0ad5-4280-b956-361becda4399)
+
+Добавление логина и пароля:
+
+![image](https://github.com/user-attachments/assets/bb1b7bc6-5ad4-47c4-91d8-cff2cf166cf3)
+
+Просмотр сохранённых логинов и паролей:
+
+![image](https://github.com/user-attachments/assets/60871901-6a4c-42ae-ad6a-bb0eba31bbcd)
+
 ## Установка и запуск:
 
 1. Склонируйте репозиторий:

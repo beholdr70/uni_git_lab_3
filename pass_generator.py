@@ -21,6 +21,8 @@ def generate_pass():
                           input(special_symbols_text)))
     symbols = ascii_letters + digits + special_symbols
     result = ''
-    for i in range(int(pass_len)):
-        result += symbols[randint(0, len(symbols) - 1)]
+    while not any(i in result for i in special_symbols if special_symbols) and not len(list(filter(lambda x: x.isnumeric(), result))) >= 2:
+        result = ''
+        for i in range(int(pass_len)):
+            result += symbols[randint(0, len(symbols) - 1)]
     print('\n' + result)

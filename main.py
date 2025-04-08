@@ -2,6 +2,15 @@ import sqlite3
 import os
 from db_setup import db_setup_func, fix_db
 from login import login_func
+from db_handle_data import display_data, write_new_data
+from pass_generator import generate_pass
+from ast import literal_eval
+
+# Importing text used in sequences of this file
+with open('dependencies/RU_loc.txt', encoding='utf-8') as loc_file:
+    loc_dict = literal_eval('{' + loc_file.read() + '}')
+    action_choice_text = loc_dict['action_choice_text']
+    loc_file.close()
 
 # Running the project
 if __name__ == '__main__':
@@ -26,5 +35,18 @@ if __name__ == '__main__':
     # Running log in sequence if not first time user
     if not first_time:
         login_func(cur)
+
+    run = True
+
+    while run:
+        action = input(action_choice_text)
+        if action == 'Добавить логин и пароль':
+            write_new_data(db, cur)
+        elif action == 'Вывести сохранённые логины и пароли':
+            display_data(db, cur)
+        elif action == 'Сгенерировать пароль':
+            generate_pass()
+        elif action == 'Выйти':
+            run = False
 
     db.close()

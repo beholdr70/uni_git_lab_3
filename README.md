@@ -11,6 +11,7 @@
 
 ## Скриншоты интерфейса:
 Первый запуск:
+
 ![image](https://github.com/user-attachments/assets/c082dd46-e268-4668-86be-3727ad09e9e5)
 
 Последующие запуски:

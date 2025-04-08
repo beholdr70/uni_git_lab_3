@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="edcafda8-b142-40f7-bc00-09a2a1349a3c" name="Changes" comment="Added features:&#10;1. Created function to log in with master-password&#10;2. Updated RU_loc file with required UI text">
-      <change afterPath="$PROJECT_DIR$/db_handle_data.py" afterDir="false" />
+    <list default="true" id="edcafda8-b142-40f7-bc00-09a2a1349a3c" name="Changes" comment="Added features:&#10;1. Added id column to general_pass table&#10;2. Added function to write user's data into general_pass table&#10;3. Added function to delete user's data from general_pass table&#10;4. Added function to edit user's data from genera_pass table&#10;5. Added function to display user's data from general_pass table">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/db_setup.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies/passDB.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_handle_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/db_handle_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependencies/RU_loc.txt" beforeDir="false" afterPath="$PROJECT_DIR$/dependencies/RU_loc.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,7 +146,15 @@
       <option name="project" value="LOCAL" />
       <updated>1744050336880</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added features:&#10;1. Added id column to general_pass table&#10;2. Added function to write user's data into general_pass table&#10;3. Added function to delete user's data from general_pass table&#10;4. Added function to edit user's data from genera_pass table&#10;5. Added function to display user's data from general_pass table">
+      <option name="closed" value="true" />
+      <created>1744140455983</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1744140455983</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -164,6 +171,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Added features:&#10;1. Created function to log in with master-password&#10;2. Updated RU_loc file with required UI text" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added features:&#10;1. Created function to log in with master-password&#10;2. Updated RU_loc file with required UI text" />
+    <MESSAGE value="Added features:&#10;1. Added id column to general_pass table&#10;2. Added function to write user's data into general_pass table&#10;3. Added function to delete user's data from general_pass table&#10;4. Added function to edit user's data from genera_pass table&#10;5. Added function to display user's data from general_pass table" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added features:&#10;1. Added id column to general_pass table&#10;2. Added function to write user's data into general_pass table&#10;3. Added function to delete user's data from general_pass table&#10;4. Added function to edit user's data from genera_pass table&#10;5. Added function to display user's data from general_pass table" />
   </component>
 </project>

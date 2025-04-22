@@ -27,7 +27,7 @@ def get_user_input_pass_gen():
 
 
 # Generating a password
-def generate_pass(pass_len, symbols, special_symbols):
+def generate_pass(pass_len: int, symbols: str, special_symbols: str):
     if pass_len > 40 or pass_len < 5:
         raise ValueError('Invalid password length was given')
     if not symbols or not any(symbol.isnumeric() for symbol in symbols):
@@ -39,7 +39,3 @@ def generate_pass(pass_len, symbols, special_symbols):
         for i in range(pass_len):
             result += symbols[randint(0, len(symbols) - 1)]
     return result
-
-
-if __name__ == '__main__':
-    get_user_input_pass_gen()

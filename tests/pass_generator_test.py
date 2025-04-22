@@ -1,8 +1,8 @@
-from unittest import main, TestCase
+from unittest import TestCase
 from pass_generator import generate_pass
 
 
-class PassGen(TestCase):
+class PassGenTest(TestCase):
     def test_pass_correct_len_passed(self):
         with self.assertRaises(ValueError) as err:
             generate_pass(41, 'a1', '')
@@ -36,7 +36,3 @@ class PassGen(TestCase):
         for i in range(10):
             password = generate_pass(25, symbols, '')
             self.assertTrue(all(symbol in symbols for symbol in password))
-
-
-if __name__ == '__main__':
-    main()

@@ -3,7 +3,7 @@ import os
 from db_setup import db_setup_func, fix_db
 from login import login_func
 from db_handle_data import display_data, write_new_data
-from pass_generator import generate_pass
+from pass_generator import get_user_input_pass_gen
 from ast import literal_eval
 
 # Importing text used in sequences of this file
@@ -45,7 +45,7 @@ if __name__ == '__main__':
         elif action == 'Вывести сохранённые логины и пароли':
             display_data(db, cur)
         elif action == 'Сгенерировать пароль':
-            generate_pass()
+            get_user_input_pass_gen()
         elif action == 'Выйти':
             run = False
 

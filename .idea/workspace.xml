@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="edcafda8-b142-40f7-bc00-09a2a1349a3c" name="Changes" comment="Added features:&#10;1. Added id column to general_pass table&#10;2. Added function to write user's data into general_pass table&#10;3. Added function to delete user's data from general_pass table&#10;4. Added function to edit user's data from genera_pass table&#10;5. Added function to display user's data from general_pass table">
-      <change beforePath="$PROJECT_DIR$/dependencies/RU_loc.txt" beforeDir="false" afterPath="$PROJECT_DIR$/dependencies/RU_loc.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+    <list default="true" id="edcafda8-b142-40f7-bc00-09a2a1349a3c" name="Changes" comment="Changes:&#10;1. All function assembled together in main.py&#10;2. Slightly changed password generation">
+      <change afterPath="$PROJECT_DIR$/tests/pass_generator_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pass_generator.py" beforeDir="false" afterPath="$PROJECT_DIR$/pass_generator.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +24,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="pass_generator_branch" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -54,15 +55,17 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python tests.Python tests in pass_generator_test.py.executor": "Run",
     "Python.db_handle_data.executor": "Run",
     "Python.main.executor": "Run",
     "Python.pass_generator.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master"
+    "git-widget-placeholder": "unitest-branch",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager" selected="Python.pass_generator">
     <configuration name="db_handle_data" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="uni_git_lab_3" />
       <option name="ENV_FILES" value="" />
@@ -129,10 +132,26 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Python tests in pass_generator_test.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="uni_git_lab_3" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/pass_generator_test.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.main" />
         <item itemvalue="Python.pass_generator" />
+        <item itemvalue="Python tests.Python tests in pass_generator_test.py" />
+        <item itemvalue="Python.main" />
         <item itemvalue="Python.db_handle_data" />
       </list>
     </recent_temporary>
@@ -193,7 +212,15 @@
       <option name="project" value="LOCAL" />
       <updated>1744147562569</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Changes:&#10;1. All function assembled together in main.py&#10;2. Slightly changed password generation">
+      <option name="closed" value="true" />
+      <created>1744148808541</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1744148808541</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -213,6 +240,7 @@
     <MESSAGE value="Added features:&#10;1. Added id column to general_pass table&#10;2. Added function to write user's data into general_pass table&#10;3. Added function to delete user's data from general_pass table&#10;4. Added function to edit user's data from genera_pass table&#10;5. Added function to display user's data from general_pass table" />
     <MESSAGE value="Added features:&#10;1. Added required text for UI&#10;2. Added function that generates a random password" />
     <MESSAGE value="Added features:&#10;1. Login function was moved into separate file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added features:&#10;1. Login function was moved into separate file" />
+    <MESSAGE value="Changes:&#10;1. All function assembled together in main.py&#10;2. Slightly changed password generation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changes:&#10;1. All function assembled together in main.py&#10;2. Slightly changed password generation" />
   </component>
 </project>

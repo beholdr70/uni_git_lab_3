@@ -1,7 +1,7 @@
 import sqlite3
 import os
 from unittest import TestCase
-from db_setup import setup_master_pass, db_setup_func, fix_db
+from db_setup import setup_master_pass, db_setup_func
 
 
 class DbSetupTest(TestCase):

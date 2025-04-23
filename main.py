@@ -17,7 +17,7 @@ if __name__ == '__main__':
     # Check for database with login/password data
     if not os.path.isfile('dependencies/passDB.db'):
         # Initiate setup sequence if not found
-        db_setup_func()
+        db_setup_func('dependencies/passDB.db')
         first_time = True
     else:
         first_time = False

@@ -5,11 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="edcafda8-b142-40f7-bc00-09a2a1349a3c" name="Changes" comment="Changes:&#10;1. reading user inputs was separated into its own function&#10;2. Created test for password generation">
-      <change afterPath="$PROJECT_DIR$/tests/login_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/db_setup_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/db_setup.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/login.py" beforeDir="false" afterPath="$PROJECT_DIR$/login.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pass_generator.py" beforeDir="false" afterPath="$PROJECT_DIR$/pass_generator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/pass_generator_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/pass_generator_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_dependencies/TestPassDB.db" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_dependencies/TestPassDB.db" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,20 +57,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python tests.Python tests in login_test.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests in pass_generator_test.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Unittests.executor&quot;: &quot;Debug&quot;,
-    &quot;Python.db_handle_data.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;Python.pass_generator.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;unitest-branch&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;actions.on.save&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python tests.Python tests in login_test.py.executor": "Run",
+    "Python tests.Python tests in pass_generator_test.py.executor": "Run",
+    "Python tests.Unittests.executor": "Run",
+    "Python.db_handle_data.executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.pass_generator.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "unitest-branch",
+    "settings.editor.selected.configurable": "actions.on.save"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Python tests.Unittests">
     <configuration name="db_handle_data" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="uni_git_lab_3" />
@@ -164,6 +166,8 @@
         <item itemvalue="Python.main" />
         <item itemvalue="Python.pass_generator" />
         <item itemvalue="Python.db_handle_data" />
+        <item itemvalue="Python.main" />
+        <item itemvalue="Python.pass_generator" />
       </list>
     </recent_temporary>
   </component>

@@ -1,12 +1,8 @@
 import sqlite3
-import os
 from ast import literal_eval
 
-path = os.path.realpath('dependencies/RU_loc.txt')
-path = os.path.realpath('dependencies/RU_loc.txt').replace('tests\\', '') if 'tests\\' in path else path
-
 # Importing text used in sequences of this file
-with open(path, encoding='utf-8') as loc_file:
+with open('dependencies/RU_loc.txt', encoding='utf-8') as loc_file:
     loc_dict = literal_eval('{' + loc_file.read() + '}')
     login_text = loc_dict['login_text']
     login_fail_text = loc_dict['login_fail_text']

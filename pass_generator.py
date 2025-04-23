@@ -1,13 +1,9 @@
 from string import ascii_letters, digits, whitespace
 from random import randint
 from ast import literal_eval
-import os
-
-path = os.path.realpath('dependencies/RU_loc.txt')
-path = os.path.realpath('dependencies/RU_loc.txt').replace('tests\\', '') if 'tests\\' in path else path
 
 # Importing text used in sequences of this file
-with open(path, encoding='utf-8') as loc_file:
+with open('dependencies/RU_loc.txt', encoding='utf-8') as loc_file:
     loc_dict = literal_eval('{' + loc_file.read() + '}')
     pass_generator_len_text = loc_dict['pass_generator_len_text']
     pass_generator_len_fail_text = loc_dict['pass_generator_len_fail_text']
